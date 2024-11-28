@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios</h1>
+
+        <form id="user-form">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="email" id="correo" placeholder="Correo" required>
+            <input type="text" id="telefono" placeholder="Teléfono" required>
+            <input type="text" id="direccion" placeholder="Dirección" required>
+            <input type="text" id="ciudad" placeholder="Ciudad" required>
+            <input type="text" id="estado" placeholder="Estado" required>
+            <input type="text" id="pais" placeholder="País" required>
+            <button type="submit">Agregar Usuario</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Ciudad</th>
+                    <th>Estado</th>
+                    <th>País</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="user-table">
+                <!-- Usuarios se cargarán aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
